@@ -17,8 +17,8 @@ set nu
 set hls is
 
 " Tab Mappings
-map <leader>tt :tabnew<cr>
-map <leader>te :tabedit<cr>
+map <leader>tt :tabnew\|:NERDTreeMirror<cr>
+map <leader>te :tabedit\|:NERDTreeMirror<cr>
 map <leader>tc :tabclose<cr>
 map <leader>to :tabonly<cr>
 map <leader>tn :tabnext<cr>
@@ -80,4 +80,3 @@ nm <C-P> :se invpaste paste?<CR>
 
 " Nerdtree
 map <leader>nt :NERDTreeToggle<cr>
-

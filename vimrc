@@ -45,6 +45,9 @@ nm <C-P> :se invpaste paste?<CR>
  Bundle 'tpope/vim-endwise'
  Bundle 'tpope/vim-fugitive'
  Bundle 'tpope/git'
+ Bundle 'tpope/vim-haml'
+
+ Bundle 'tpope/vim-rails'
  
  " My Bundles here:
  " original repos on github

@@ -22,8 +22,5 @@ if [ -e ~/vim-config ] && [ ! -e ~/.vimrc ]; then
 	ln -sv ~/.vim/vimrc ~/.vimrc
 fi
 
-echo "Running: vim -c \":BundleInstall\" in 5 seconds..."
-sleep 5
-
-vim -c ":BundleInstall"
+echo "Run: vim -c ':BundleInstall' to ensure that all bundles are installed correct.\nThis should create a list of error messages if all is correct."
 

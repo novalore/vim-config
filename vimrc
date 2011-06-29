@@ -27,6 +27,18 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tablast<cr>
 
+" Buffer Mapping
+map <leader>bs :sbuffer<cr>
+map <leader>bn :bnext<cr>
+map <leader>bns :sbnext<cr>
+map <leader>bp :bprevious<cr>
+map <leader>bps :sbprevious<cr>
+map <leader>bp :bprevious<cr>
+map <leader>bf :bfirst<cr>
+map <leader>bfs :sbfirst<cr>
+map <leader>bl :blast<cr>
+map <leader>bls :sblast<cr>
+
 " Paste mapping
 nm <C-P> :se invpaste paste?<CR>
 
@@ -80,3 +92,6 @@ nm <C-P> :se invpaste paste?<CR>
 
 " Nerdtree
 map <leader>nt :NERDTreeToggle<cr>
+
+" Line highlighting
+set cul

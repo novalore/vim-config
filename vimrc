@@ -60,6 +60,8 @@ nm <C-P> :se invpaste paste?<CR>
  Bundle 'tpope/vim-haml'
 
  Bundle 'tpope/vim-rails'
+
+ Bundle 'bufexplorer'
  
  " My Bundles here:
  " original repos on github
@@ -92,6 +94,11 @@ nm <C-P> :se invpaste paste?<CR>
 
 " Nerdtree
 map <leader>nt :NERDTreeToggle<cr>
+nm <C-N> :NERDTreeToggle<CR>
+nm <C-T> :tabnew\|:NERDTreeMirror<cr>
 
 " Line highlighting
 set cul
+
+" always turn on NERDTree
+au VimEnter * NERDTreeToggle 

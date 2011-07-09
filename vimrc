@@ -97,7 +97,7 @@ map <leader>nt :NERDTreeToggle<cr>
 nm <C-N> :NERDTreeToggle<CR>
 nm <C-T> :tabnew\|:NERDTreeMirror<cr>
 
-nm <C-B> :BufExplorer<cr>
+nm <C-E> :BufExplorer<cr>
 
 " Line highlighting
 set cul

@@ -28,7 +28,7 @@ map <leader>tl :tablast<cr>
 map <leader>tm :tablast<cr>
 
 " Buffer Mapping
-map <leader>bs :sbuffer<cr>
+map <leader>bh :sbuffer<cr>
 map <leader>bn :bnext<cr>
 map <leader>bns :sbnext<cr>
 map <leader>bp :bprevious<cr>
@@ -61,7 +61,7 @@ nm <C-P> :se invpaste paste?<CR>
 
  Bundle 'tpope/vim-rails'
 
- Bundle 'bufexplorer'
+ Bundle 'markabe/bufexplorer'
  
  " My Bundles here:
  " original repos on github
@@ -96,6 +96,8 @@ nm <C-P> :se invpaste paste?<CR>
 map <leader>nt :NERDTreeToggle<cr>
 nm <C-N> :NERDTreeToggle<CR>
 nm <C-T> :tabnew\|:NERDTreeMirror<cr>
+
+nm <C-B> :BufExplorer<cr>
 
 " Line highlighting
 set cul

@@ -16,4 +16,7 @@ set columns=200
 
 set gfn=Monaco:h13
 
+" Set no wrap
+set nowrap
+
 au VimEnter * NERDTreeToggle 

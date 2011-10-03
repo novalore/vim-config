@@ -103,4 +103,4 @@ nm <C-E> :BufExplorer<cr>
 set cul
 
 " always turn on NERDTree
-au VimEnter * NERDTreeToggle 
+" au VimEnter * NERDTreeToggle 

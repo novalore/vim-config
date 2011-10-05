@@ -5,7 +5,7 @@ if [[ $DIR =~ "vim-config" ]]; then
 	echo "Looks like I have what I need to set up you, starting."
 else
 	echo "Looks like I need to checkout what you need, starting."
-	if [ ! `git clone git://github.com/jmervine/vim-config.git` ]; then
+	if ! git clone git://github.com/jmervine/vim-config.git; then
 		echo " --> git clone failed, exiting."
 		exit 1
 	fi

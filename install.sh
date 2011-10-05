@@ -1,6 +1,7 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
+# test to see if I need to checkout code
 if [[ $DIR =~ "vim-config" ]]; then
 	echo "Looks like I have what I need to set up you, starting."
 else
@@ -17,6 +18,7 @@ else
 	cd $DIR
 fi
 
+# setup vimrc
 if [ -e $HOME/.vimrc ]; then
 	if [ -h $HOME/.vimrc ]; then 
 		echo " --> $HOME/.vimrc exists and is a symlink, deleting."
@@ -30,6 +32,21 @@ fi
 echo "Creating $HOME/.vimrc -> $DIR/vimrc symlink."
 ln -s $DIR/vimrc $HOME/.vimrc
 
+# setup gvimrc
+if [ -e $HOME/.gvimrc ]; then
+	if [ -h $HOME/.gvimrc ]; then 
+		echo " --> $HOME/.gvimrc exists and is a symlink, deleting."
+		rm $HOME/.gvimrc
+	else
+		echo " --> $HOME/.gvimrc exists and is not a symlink, creating a backup."
+		mv $HOME/.gvimrc $HOME/.gvimrc.old
+	fi
+fi
+
+echo "Creating $HOME/.gvimrc -> $DIR/gvimrc symlink."
+ln -s $DIR/gvimrc $HOME/.gvimrc
+
+# setup .vim directory
 if [ -d $HOME/.vim ]; then
 	if [ -h $HOME/.vim ]; then 
 		echo " --> $HOME/.vim exists and is a symlink, deleting."

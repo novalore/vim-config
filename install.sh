@@ -60,4 +60,8 @@ fi
 echo "Creating $HOME/.vim -> $DIR symlink."
 ln -s $DIR $HOME/.vim
 
-
+echo ""
+echo "For best results run the following the first time you run vim:"
+echo ""
+echo "	:BundleInstall!"
+echo ""

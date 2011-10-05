@@ -58,6 +58,6 @@ if [ -d $HOME/.vim ]; then
 fi
 
 echo "Creating $HOME/.vim -> $DIR symlink."
-ln -s $HOME/.vim $DIR
+ln -s $DIR $HOME/.vim
 
 

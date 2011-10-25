@@ -1,5 +1,6 @@
 " include .vimrc
 source ~/.vimrc
+set shell=bash
 
 " Change colorscheme
 colorscheme slate
@@ -19,4 +20,3 @@ set gfn=Monaco:h13
 " Set no wrap
 set nowrap
 
-au VimEnter * NERDTreeToggle 

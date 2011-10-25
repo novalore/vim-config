@@ -32,6 +32,8 @@ map <leader>bf :bfirst<CR>
 map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
+map <leader>bd :bd <CR>
+nm <C-D> :bd <CR>
 
 " Paste mapping
 nm <C-P> :se invpaste paste?<CR>
@@ -59,6 +61,10 @@ map <leader>rf :res 100<CR>
 " Crazy ConqueTerm mappings
 " NOTE: you can only use '--login' if you're not using coloring or you've
 " updated your .profile to display without color when "$CONQUE" != "".
+" 
+" NOTE: your scroll back will kill your ram if you leave ConqueTerm open too
+" long. I've mapped <C-D> and <leader>bd to delete buffers, which closes the
+" window and file. This will clear slowness with your ConqueTerm.
 map <leader>sr :split <BAR> :wincmd J <BAR> :resize 10 <BAR> :ConqueTerm bash --login <CR> pwd <CR> irb <CR> 
 map <leader>sh :split <BAR> :wincmd J <BAR> :resize 10 <BAR> :ConqueTerm bash --login <CR> pwd <CR>
 map <leader>ss :ConqueTerm bash --login <CR> pwd <CR>

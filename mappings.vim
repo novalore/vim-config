@@ -40,8 +40,8 @@ nm <C-P> :se invpaste paste?<CR>
 nm <C-r> :set filetype=ruby<CR>
 
 " Nerdtree mappings
-map <leader>nt :NERDTreeToggle<CR>
-nm <C-N> :NERDTreeToggle<CR>
+map <leader>nr :NERDTree<CR>
+nm <C-N> :NERDTree<CR>
 nm <C-E> :BufExplorer<CR>
 nm <C-S> :ConqueTerm bash<CR>
 

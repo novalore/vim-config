@@ -18,3 +18,4 @@ My ConqueTerm shortcuts are:
 2. <leader>sr -- opens irb in the above window.
 3. <leader>ss -- opens bash in the current buffer.
 4. <leader>ssr -- opens irb in the current buffer.
+

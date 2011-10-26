@@ -9,6 +9,9 @@ map <leader>sog :so ~/.gvimrc<CR>
 " edit
 map <leader>en :e! ~/.vimrc<CR>
 map <leader>eng :e! ~/.gvimrc<CR>
+" mouse mode
+"nm <C-m> :set mouse=a <CR>
+"nm <C-m-m> :set mouse=a <CR>
 
 " Tab Mappings
 "map <leader>tt :tabnew\|:NERDTreeMirror<CR>
@@ -59,14 +62,4 @@ map <leader>rb :res 25<CR>
 map <leader>rf :res 100<CR>
 
 " Crazy ConqueTerm mappings
-" NOTE: you can only use '--login' if you're not using coloring or you've
-" updated your .profile to display without color when "$CONQUE" != "".
-" 
-" NOTE: your scroll back will kill your ram if you leave ConqueTerm open too
-" long. I've mapped <C-D> and <leader>bd to delete buffers, which closes the
-" window and file. This will clear slowness with your ConqueTerm.
-map <leader>sr :split <BAR> :wincmd J <BAR> :resize 10 <BAR> :ConqueTerm bash --login <CR> pwd <CR> irb <CR> 
-map <leader>sh :split <BAR> :wincmd J <BAR> :resize 10 <BAR> :ConqueTerm bash --login <CR> pwd <CR>
-map <leader>ss :ConqueTerm bash --login <CR> pwd <CR>
-map <leader>ssr :ConqueTerm bash --login <CR> pwd <CR> irb <CR>
-
+" moved to conqueterm.vim

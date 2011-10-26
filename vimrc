@@ -22,9 +22,20 @@ set cul
 """""""""""""""""""""""""""""
 " AUTOLOAD CONFIG
 """""""""""""""""""""""""""""
-au VimEnter * NERDTreeToggle 
-
 source ~/.vim/vundle.vim
 source ~/.vim/conqueterm.vim
 source ~/.vim/nerdtree.vim
 source ~/.vim/mappings.vim
+
+"au VimEnter * NERDTree
+" clean up nerdtree when sourcing
+" and load always
+let s:curwin = winnr() 		
+" ^ save current window number
+exec "NERDTree"			
+" ^ load NERDTree
+exec s:curwin . "wincmd w"	
+" ^ return to previous window
+unlet s:curwin	
+" ^ unset var to be safe
+

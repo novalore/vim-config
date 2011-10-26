@@ -13,6 +13,7 @@ function! CTToggle()
                       bd
                 else
                       exec g:ct_winnr . "wincmd w"
+			resize 10
                 endif
 	else
 		split

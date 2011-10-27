@@ -27,15 +27,14 @@ source ~/.vim/conqueterm.vim
 source ~/.vim/nerdtree.vim
 source ~/.vim/mappings.vim
 
-"au VimEnter * NERDTree
 " clean up nerdtree when sourcing
 " and load always
-let s:curwin = winnr() 		
-" ^ save current window number
-exec "NERDTree"			
-" ^ load NERDTree
-exec s:curwin . "wincmd w"	
-" ^ return to previous window
-unlet s:curwin	
-" ^ unset var to be safe
+if exists('g:NERDTreeStatusline')
+	let s:curwin = winnr() 		
+	exec "NERDTree"			
+	exec s:curwin . "wincmd w"	
+	unlet s:curwin	
+else
+	au VimEnter * NERDTree
+endif
 

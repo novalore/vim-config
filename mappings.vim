@@ -12,6 +12,8 @@ map <leader>eng :e! ~/.gvimrc<CR>
 " mouse mode
 "nm <C-m> :set mouse=a <CR>
 "nm <C-m-m> :set mouse=a <CR>
+" unmap help
+nm <F1> <nop>
 
 " Tab Mappings
 "map <leader>tt :tabnew\|:NERDTreeMirror<CR>
@@ -36,13 +38,15 @@ map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
 map <leader>bd :bd <CR>
+nm <C-B> :bnext <CR>
 nm <C-D> :bd <CR>
+nm <C-O> :only <CR>
 
 " Paste mapping
 nm <C-P> :se invpaste paste?<CR>
 
 " Ruby File Type Mapping
-nm <C-r> :set filetype=ruby<CR>
+"nm <C-r> :set filetype=ruby<CR>
 
 " Nerdtree mappings
 map <leader>nr :NERDTree<CR>

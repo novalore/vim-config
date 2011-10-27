@@ -3,7 +3,7 @@ source ~/.vimrc
 set shell=bash
 
 " Change colorscheme
-colorscheme slate
+colorscheme evening
 
 " change cul color
 hi CursorLine guibg=#000000

@@ -19,6 +19,11 @@ set hls is
 " Line highlighting
 set cul
 
+" tab 
+set ts=2
+set expandtab
+set smarttab
+
 """""""""""""""""""""""""""""
 " AUTOLOAD CONFIG
 """""""""""""""""""""""""""""

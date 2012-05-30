@@ -28,18 +28,8 @@ set smarttab
 " AUTOLOAD CONFIG
 """""""""""""""""""""""""""""
 source ~/.vim/vundle.vim
-source ~/.vim/conqueterm.vim
+"source ~/.vim/conqueterm.vim
 source ~/.vim/nerdtree.vim
 source ~/.vim/mappings.vim
-
-" clean up nerdtree when sourcing
-" and load always
-if exists('g:NERDTreeStatusline')
-	let s:curwin = winnr() 		
-	exec "NERDTree"			
-	exec s:curwin . "wincmd w"	
-	unlet s:curwin	
-else
-	au VimEnter * NERDTree
-endif
+source ~/.vim/functions.vim
 

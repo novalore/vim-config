@@ -62,5 +62,5 @@ augroup END
 " strip unwanted trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" my mouse mappings
 source ~/.vim/mappings.vim
+source ~/.vim-config/functions.vim

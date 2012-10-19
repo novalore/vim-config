@@ -1,6 +1,3 @@
-" my mouse mappings
-source ~/.vim/mappings.vim
-
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 "highlight ExtraWhitespace ctermbg=red guibg=red
 
@@ -64,3 +61,6 @@ augroup END
 
 " strip unwanted trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" my mouse mappings
+source ~/.vim/mappings.vim

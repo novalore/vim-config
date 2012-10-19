@@ -38,12 +38,12 @@ map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
 map <leader>bd :bd <CR>
-"nm <C-B> :bnext <CR>
+nm <C-B> :bnext <CR>
 nm <C-D> :bd <CR>
 nm <C-O> :only <CR>
 
 " Paste mapping
-nm <C-P> :se invpaste paste?<CR>
+map <leader>p :se invpaste paste?<CR>
 
 " Ruby File Type Mapping
 map <leader>rr :set filetype=ruby<CR>

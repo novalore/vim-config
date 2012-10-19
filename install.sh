@@ -25,5 +25,5 @@ cd ./$spf_thirteen
 bash ./link
 cd -
 
-ln -v -s mappings.vim ~/.vim/mappings.vim
-ln -v -s functions.vim ~/.vim/functions.vim
+ln -v -s $( pwd )/mappings.vim ~/.vim/mappings.vim
+ln -v -s $( pwd )/functions.vim ~/.vim/functions.vim

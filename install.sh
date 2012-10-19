@@ -26,3 +26,4 @@ bash ./link
 cd -
 
 ln -v -s mappings.vim ~/.vim/mappings.vim
+ln -v -s functions.vim ~/.vim/functions.vim

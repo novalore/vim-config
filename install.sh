@@ -25,4 +25,4 @@ cd ./$spf_thirteen
 bash ./link
 cd -
 
-cp -v mappings.vim ~/.vim/mappings.vim
+ln -v -s mappings.vim ~/.vim/mappings.vim

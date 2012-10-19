@@ -3,7 +3,7 @@
 """""""""""""""""""""""""""""
 
 " vimrc
-" source 
+" source
 map <leader>so :so ~/.vimrc<CR>
 map <leader>sog :so ~/.gvimrc<CR>
 " edit
@@ -38,7 +38,7 @@ map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
 map <leader>bd :bd <CR>
-nm <C-B> :bnext <CR>
+"nm <C-B> :bnext <CR>
 nm <C-D> :bd <CR>
 nm <C-O> :only <CR>
 

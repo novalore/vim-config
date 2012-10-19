@@ -64,4 +64,3 @@ augroup END
 
 " strip unwanted trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-

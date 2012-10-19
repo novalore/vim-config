@@ -1,2 +1,6 @@
 Bundle 'tpope/vim-haml'
 
+" spf13 overide variables
+let spf13_leader="/"
+let spf13_no_views=1
+let spf13_no_backups=1

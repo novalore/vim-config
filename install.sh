@@ -4,7 +4,7 @@ set -ue
 
 links=( $( ls -a -d1 .*vim* ) )
 
-spf_thriteen=".spf13-vim-3"
+spf_thirteen=".spf13-vim-3"
 
 git clone http://github.com/jmervine/spf13-vim.git $spf_thirteen
 git clone https://github.com/gmarik/vundle.git $spf_thirteen/.vim/bundle/vundle

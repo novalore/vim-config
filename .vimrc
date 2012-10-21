@@ -70,7 +70,7 @@ let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.pyc', '\~$', '\.swo$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr']
 let NERDTreeChDirMode=0
 let NERDTreeQuitOnOpen=1
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0 " modified
 let NERDTreeKeepTreeInNewTab=1
 
 nmap <Leader>a= :Tabularize /=<CR>
@@ -86,13 +86,18 @@ vmap <Leader>a<Bar> :Tabularize /<Bar><CR>
 
 nnoremap <silent> <leader>gs :Gstatus<CR>
 nnoremap <silent> <leader>gd :Gdiff<CR>
-nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <silent> <leader>gc :Gcommit -a<CR>
 nnoremap <silent> <leader>gb :Gblame<CR>
 nnoremap <silent> <leader>gl :Glog<CR>
 nnoremap <silent> <leader>gp :Git push<CR>
 
 "
 " END SPF13
+"
+" Fix broken NERDTree arrows for simple installs:
+let g:NERDTreeDirArrows=0
+
+"
 "
 
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -105,10 +110,6 @@ set nofoldenable
 " Plugins
 " set author
 let g:snips_author = 'Joshua Mervine <joshua@mervine.net>'
-
-" nerdtree
-" let NERDTreeQuitOnOpen=0
-let NERDTreeShowHidden=0
 
 " toggle spell checking
 imap <Leader>s <C-o>:setlocal spell! spelllang=en_gb<CR>

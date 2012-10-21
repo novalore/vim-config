@@ -1,0 +1,13 @@
+set nocompatible        " must be first line
+set background=dark     " Assume a dark background
+
+Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-haml'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fugitive'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'godlygeek/tabular'
+Bundle 'corntrace/bufexplorer'

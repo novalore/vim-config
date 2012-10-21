@@ -4,12 +4,8 @@ set -ue
 
 links=( $( ls -a -d1 .*vim* ) )
 
-spf_thirteen=".spf13-vim-3"
-
-test -e $spf_thirteen && rm -rf $spf_thirteen
-
-git clone http://github.com/jmervine/spf13-vim.git $spf_thirteen
-git clone https://github.com/gmarik/vundle.git $spf_thirteen/.vim/bundle/vundle
+mkdir -p .vim/bundle
+git clone https://github.com/gmarik/vundle.git .vim/bundle/vundle
 
 for l in "${links[@]}"
 do
@@ -21,9 +17,5 @@ do
 done
 
 # remove and recreate symlinks
-cd ./$spf_thirteen
-bash ./link
-cd -
-
 ln -v -s $( pwd )/mappings.vim ~/.vim/mappings.vim
 ln -v -s $( pwd )/functions.vim ~/.vim/functions.vim

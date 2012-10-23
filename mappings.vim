@@ -38,7 +38,6 @@ map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
 map <leader>bd :bd <CR>
-nm <C-B> :bnext <CR>
 nm <C-D> :bd <CR>
 nm <C-O> :only <CR>
 
@@ -52,7 +51,6 @@ map <leader>rr :set filetype=ruby<CR>
 map <leader>nr :NERDTreeToggle<CR>
 nm <C-N> :NERDTreeToggle<CR>
 nm <C-E> :BufExplorer<CR>
-nm <C-S> :ConqueTerm bash<CR>
 
 " Window mappings
 map <C-j> <C-W>j
@@ -60,8 +58,8 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" Window resize mappings
-map <leader>rs :res 10<CR>
-map <leader>rb :res 25<CR>
-map <leader>rf :res 100<CR>
+" Fugitive overides
+nnoremap <silent> <leader>gc :Gcommit -a<CR>
+nnoremap <silent> <leader>gu :Git push<CR>
+nnoremap <silent> <leader>gp :Git pull<CR>
 

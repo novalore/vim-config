@@ -63,3 +63,5 @@ nnoremap <silent> <leader>gc :Gcommit -a<CR>
 nnoremap <silent> <leader>gu :Git push<CR>
 nnoremap <silent> <leader>gp :Git pull<CR>
 
+" Create bookmark
+map <leader>bm :Bookmark<CR>

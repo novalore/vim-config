@@ -37,7 +37,7 @@ map <leader>bf :bfirst<CR>
 map <leader>bfs :sbfirst<CR>
 map <leader>bl :blast<CR>
 map <leader>bls :sblast<CR>
-map <leader>bd :bd <CR>
+map <leader>bD :bdelete! <CR>
 nm <C-D> :bd <CR>
 nm <C-O> :only <CR>
 

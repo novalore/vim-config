@@ -1,4 +1,5 @@
 Bundle 'tpope/vim-haml'
+Bundle 'vim-scripts/sudo.vim'
 
 " spf13 overide variables
 let spf13_leader="/"

@@ -1,5 +1,11 @@
 Bundle 'tpope/vim-haml'
 Bundle 'vim-scripts/sudo.vim'
+Bundle 'skwp/vim-ruby-conque'
+Bundle 'rson/vim-conque'
+Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'evanmiller/nginx-vim-syntax'
+Bundle 'kchmck/vim-coffee-script'
+"Bundle 'vim-scripts/VimIRC.vim'
 
 " spf13 overide variables
 let spf13_leader="/"
@@ -7,4 +13,4 @@ let spf13_no_views=1
 let spf13_no_backups=1
 let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
 let g:spf13_leader='\'
-
+let g:spf13_no_autochdir = 1

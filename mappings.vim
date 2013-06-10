@@ -17,6 +17,7 @@ nm <F1> <nop>
 
 " Tab Mappings
 "map <leader>tt :tabnew\|:NERDTreeMirror<CR>
+map <leader>rr V
 "map <leader>te :tabedit\|:NERDTreeMirror<CR>
 "map <leader>tc :tabclose<CR>
 "map <leader>to :tabonly<CR>
@@ -44,8 +45,29 @@ nm <C-O> :only <CR>
 " Paste mapping
 map <leader>p :se invpaste paste?<CR>
 
-" Ruby File Type Mapping
-map <leader>rr :set filetype=ruby<CR>
+" Conque ZSH
+nmap <silent> <Leader>tt :ConqueTerm zsh<CR>
+nmap <silent> <Leader>ts :ConqueTermSplit zsh<CR>
+nmap <silent> <Leader>tv :ConqueTermVSplit zsh<CR>
+
+
+" Ruby Conque
+nmap <silent> <Leader>rr :call RunRubyCurrentFileConque()<CR>
+nmap <silent> <Leader>rs :call RunRspecCurrentFileConque()<CR>
+nmap <silent> <Leader>rsl :call RunRspecCurrentLineConque()<CR>
+nmap <silent> <Leader>brs :ConqueTermVSplit bundle exec rspec<CR>
+"nmap <silent> <Leader>brs :ConqueTermVSplit bundle exec spec bufname("%")<CR>
+nmap <silent> <Leader>fs :call RelatedSpecVOpen()<CR>
+"nmap <silent> <Leader> :call RelatedSpecOpen()<CR>
+"
+" nmap <silent> <Leader>rccc :call RunCucumberCurrentFileConque()<CR>
+" nmap <silent> <Leader>rccl :call RunCucumberCurrentLineConque()<CR>
+" nmap <silent> <Leader>rcRR :call RunRakeConque()<CR>
+" nmap <silent> <Leader>rcrl :call RunLastConqueCommand()<CR>
+"
+ nnoremap <silent> <C-s> :call RelatedSpecVOpen()<CR>
+" nnoremap <silent> ,<C-s> :call RelatedSpecOpen()<CR>
+
 
 " Nerdtree mappings
 map <leader>nr :NERDTreeToggle<CR>

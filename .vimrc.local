@@ -4,19 +4,8 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 " color scheme
 " see: http://vimcolorschemetest.googlecode.com/svn/html/index-java.html
 if has('gui_running')
-    "colorscheme blackboard
-    "
-    "colorscheme bensday
-    "colorscheme bocau
-    "colorscheme candycode
-    "colorscheme candyman
-    "colorscheme blacklight
-    "colorscheme chance-of-storm
-    "colorscheme ego
     colorscheme forneus
 else
-    "colorscheme forneus
-    "colorscheme darkrobot
     colorscheme default
 endif
 
@@ -57,6 +46,8 @@ augroup myfiletypes
   autocmd FileType * set ai sw=2 sts=2 et
   " autoindent with four spaces, always expand tabs
   autocmd FileType python,html,xml,markdown set ai sw=4 sts=4 et
+  " for make
+  autocmd FileType make set ai sw=4 sts=4 ts=4 noexpandtab
 augroup END
 
 " strip unwanted trailing whitespace
@@ -64,3 +55,13 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 source ~/.vim/mappings.vim
 source ~/.vim/functions.vim
+
+let g:ruby_conque_rspec_runner='bundle exec spec'
+
+" vimirc settings
+" let g:vimirc_nick     = "jmervine"
+" let g:vimirc_user     = "jmervine"
+" let g:vimirc_realname = "jmervine"
+" let g:vimirc_server   = "irc.flight.yellowpages.com"
+" let g:vimirc_autojoin = "#atari,#webypqa,#appsupport"
+

@@ -87,3 +87,6 @@ nnoremap <silent> <leader>gp :Git pull<CR>
 
 " Create bookmark
 map <leader>bm :Bookmark<CR>
+
+" JSLint
+:noremap <leader>R :! jslint --es5 --node --vars --forin --nomen --color --undef --sloppy --maxlen 80 --indent 4 %<CR>

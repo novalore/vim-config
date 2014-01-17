@@ -1,0 +1,66 @@
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+"highlight ExtraWhitespace ctermbg=red guibg=red
+
+" color scheme
+" see: http://vimcolorschemetest.googlecode.com/svn/html/index-java.html
+if has('gui_running')
+    colorscheme forneus
+else
+    colorscheme default
+endif
+
+match ExtraWhitespace /\s\+\%#\@<!$/
+
+" disable autofolding
+set nofoldenable
+
+" Plugins
+" set author
+let g:snips_author = 'Joshua Mervine <joshua@mervine.net>'
+
+" nerdtree
+" let NERDTreeQuitOnOpen=0
+let NERDTreeShowHidden=0
+
+" turn off mouse mode
+if !has('gui')
+    set mouse-=a
+end
+
+" toggle spell checking
+imap <Leader>s <C-o>:setlocal spell! spelllang=en_gb<CR>
+nmap <Leader>s :setlocal spell! spelllang=en_gb<CR>
+
+" turn off spell checking by default
+set nospell
+
+
+" turn off backups
+set nobackup
+
+
+augroup myfiletypes
+  " Clear old autocmds in group
+  autocmd!
+  " autoindent with two spaces, always expand tabs
+  autocmd FileType * set ai sw=2 sts=2 et
+  " autoindent with four spaces, always expand tabs
+  autocmd FileType javascript,json,python,html,xml,markdown set ai sw=4 sts=4 et
+  " for make
+  autocmd FileType make set ai sw=4 sts=4 ts=4 noexpandtab
+augroup END
+
+" strip unwanted trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
+
+source ~/.vim/mappings.vim
+source ~/.vim/functions.vim
+
+let g:ruby_conque_rspec_runner='bundle exec spec'
+
+" vimirc settings
+" let g:vimirc_nick     = "jmervine"
+" let g:vimirc_user     = "jmervine"
+" let g:vimirc_realname = "jmervine"
+" let g:vimirc_server   = "irc.flight.yellowpages.com"
+" let g:vimirc_autojoin = "#atari,#webypqa,#appsupport"

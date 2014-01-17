@@ -1,1 +1,6 @@
 .*.swp
+.netrwhist
+.vimundo
+.vimswap
+.viminfo
+.spf13-vim*

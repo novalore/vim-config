@@ -1,0 +1,37 @@
+Bundle 'tpope/vim-haml'
+Bundle 'vim-scripts/sudo.vim'
+Bundle 'skwp/vim-ruby-conque'
+Bundle 'rson/vim-conque'
+Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'evanmiller/nginx-vim-syntax'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'bling/vim-airline'
+Bundle 'Lokaltog/powerline'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'jnwhiteh/vim-golang'
+
+" spf13 overide variables
+let spf13_leader="/"
+let spf13_no_views=1
+let spf13_no_backups=1
+let g:spf13_bundle_groups=['general', 'neocomplcache', 'programming', 'ruby', 'python', 'javascript', 'html', 'misc']
+let g:spf13_leader='\'
+let g:spf13_no_autochdir = 1
+
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline_theme='dark'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%t'
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_fugitive_prefix = ' '
+let g:airline_readonly_symbol = ''
+let g:airline_linecolumn_prefix = ' '
+let g:airline_section_b = '%{getcwd()}'
+let g:airline_section_c = '%t'
+set ambiwidth=double
+set noshowmode
+set laststatus=2

@@ -8,7 +8,7 @@ spf_thirteen=".spf13-vim-3"
 
 test -e $spf_thirteen && rm -rf $spf_thirteen
 
-git clone http://github.com/jmervine/spf13-vim.git $spf_thirteen
+git clone https://github.com/jmervine/spf13-vim.git $spf_thirteen
 git clone https://github.com/gmarik/vundle.git $spf_thirteen/.vim/bundle/vundle
 
 for l in "${links[@]}"

@@ -56,7 +56,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 source ~/.vim/mappings.vim
 source ~/.vim/functions.vim
 
-let g:ruby_conque_rspec_runner='bundle exec spec'
+"let g:ruby_conque_rspec_runner='bundle exec spec'
 
 " vimirc settings
 " let g:vimirc_nick     = "jmervine"
